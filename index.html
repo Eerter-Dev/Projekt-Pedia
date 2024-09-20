@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projekt Pedia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-content">
+      <a href="#articles" class="btn">Przeglądaj Artykuły</a>
+    </div>
+  </section>
+
+  <section class="articles" id="articles">
+    <h2>Najnowsze Artykuły</h2>
+    <ul class="articles-list">
+        <li class="article-item" data-id="1">
+            <div class="article-content">
+              <h3>
+                <a href="article-InicjacjaMozliwosciZdarzenia.html" class="article-link">Inicjacja Możliwości Zdarzenia</a>
+              </h3>
+              <p class="article-desc">Teoria ta daje nam nowe narzędzie do zrozumienia, jak nasze myśli mogą kształtować rzeczywistość.</p>
+            </div>
+          
+            <button class="like-button" data-id="1">
+              <span class="heart-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path class="heart-path" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+              </span>
+              <span class="like-count">10</span>
+            </button>
+          
+            <div class="tags">
+              <a href="#" class="tag">#Tag1</a>
+              <a href="#" class="tag">#Tag2</a>
+            </div>
+          
+            <div class="authors" style="color: var(--third-color);">
+              Autorzy:
+              <a href="#" class="author">Eerter</a>,
+              <a href="#" class="author">Materoxxs</a>
+            </div>
+          
+            <div class="comments-counter">10 komentarzy</div>
+          </li>
+          
+          
+
+          <li class="article-item" data-id="2">
+            <div class="article-content">
+              <h3>
+                <a href="article.html" class="article-link">Inny tytuł artykułu</a>
+              </h3>
+              <p class="article-desc">Krótki opis artykułu...</p>
+            </div>
+          
+            <button class="like-button" data-id="2">
+              <span class="heart-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path class="heart-path" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41 0.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+              </span>
+              <span class="like-count">15</span>
+            </button>
+          
+            <div class="tags">
+              <a href="#" class="tag">#TagA</a>
+              <a href="#" class="tag">#TagB</a>
+            </div>
+          
+            <div class="authors" style="color: var(--third-color);">
+              Autorzy:
+              <a href="#" class="author">Eerter</a>,
+              <a href="#" class="author">Materoxxs</a>
+            </div>
+          
+            <div class="comments-counter">8 komentarzy</div>
+          </li>
+          
+    </ul>
+
+    <div class="all-articles">
+      <a href="#" class="btn">Zobacz Wszystkie Artykuły</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Copyright &copy; 2024 Projekt Pedia</p>
+    <div class="social-icons">
+      <img src="facebook-icon.png" alt="Facebook">
+      <img src="twitter-icon.png" alt="Twitter">
+      <img src="instagram-icon.png" alt="Instagram">
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

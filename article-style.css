@@ -1,0 +1,285 @@
+:root {
+    --primary-color: #ffb700; /* Żółty */
+    --secondary-color: #191919; 
+    --first-color: #000000;
+    --text-color: #fff;
+    --third-color: #555;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background-color: var(--first-color);
+    color: var(--text-color);
+}
+
+/* Style dla przycisku powrotu */
+.back-button {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1000;
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.back-icon {
+    width: 32px;
+    height: 32px;
+    fill: var(--text-color);
+}
+
+.back-button:hover .back-icon {
+    fill: var(--primary-color);
+}
+
+header {
+    background-color: var(--secondary-color);
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+header .btn {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+header .btn:hover {
+    background-color: var(--third-color);
+}
+
+.article-detail {
+    padding: 4rem 2rem;
+    background-color: var(--first-color);
+    max-width: 800px;
+    margin: 0 auto;
+    margin-right: 400px; /* Dodaj margines po prawej stronie */
+    color: var(--text-color);
+}
+.article-detail h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.article-detail h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.article-detail h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.article-detail p {
+    margin-bottom: 0.5rem;
+    color: var(--third-color);
+}
+
+.article-meta {
+    font-size: 0.9rem;
+    color: var(--third-color);
+    margin-bottom: 2rem;
+}
+
+.article-meta .author {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.article-meta .author:hover {
+    text-decoration: underline;
+}
+
+.article-content {
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.comments-section {
+    margin-top: 2rem;
+}
+
+.comments-section h2 {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.comment {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.comment-author {
+    font-weight: bold;
+}
+
+.comment-author a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.comment-author a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.comment-text {
+    color: var(--third-color);
+}
+
+.like-button {
+    display: flex;
+    align-items: center;
+}
+
+.heart-icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--third-color);
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+
+
+.like-count {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+}
+
+.comment-form {
+    margin-top: 2rem;
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.comment-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.comment-form input, .comment-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--third-color);
+    border-radius: 5px;
+}
+
+.comment-form .btn {
+    background-color: var(--third-color);
+    color: var(--text-color);
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.comment-form .btn:hover {
+    background-color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--first-color);
+    padding: 1rem 2rem;
+    text-align: center;
+    color: var(--text-color);
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+footer .social-icons img {
+    width: 24px;
+    height: 24px;
+    margin: 0 0.5rem;
+}
+
+/* Style dla przycisków nawigacyjnych */
+.scroll-buttons {
+    position: fixed;
+    top: 50%;
+    right: 40px; /* Odległość od prawej */
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 50px; /* Zmniejszona przerwa */
+}
+
+.scroll-button-container {
+    display: flex;
+    align-items: center;
+}
+
+.scroll-button {
+    background-color: var(--secondary-color);
+    color: var(--secondary-color); /* Domyślny kolor tekstu obok kropek */
+    border: none;
+    border-radius: 50%;
+    width: 20px; /* Rozmiar przycisku */
+    height: 20px; /* Rozmiar przycisku */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.scroll-title {
+    margin-left: 10px;
+    color: var(--secondary-color); /* Domyślny kolor tekstu obok kropek */
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Wyrównanie tekstu do lewej */
+}
+
+.scroll-button.active {
+    background-color: var(--primary-color);
+    color: var(--text-color); /* Kolor tekstu na aktywnej kropce */
+}
+
+.scroll-button.active + .scroll-title {
+    color: var(--primary-color); /* Zmiana koloru tekstu po aktywacji */
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}

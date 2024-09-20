@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artykuł - Projekt Pedia</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="article-style.css">
+</head>
+<body>
+
+  <!-- Przycisk powrotu do strony głównej -->
+  <a href="index.html" class="back-button">
+    <svg class="back-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M19 11H7.14l3.63-4.36a1 1 0 1 0-1.54-1.28l-5 6a1.19 1.19 0 0 0-.09.15c0 .05 0 .08-.07.13A1 1 0 0 0 4 12a1 1 0 0 0 .07.36c0 .05 0 .08.07.13a1.19 1.19 0 0 0 .09.15l5 6A1 1 0 0 0 10 19a1 1 0 0 0 .64-.23 1 1 0 0 0 .13-1.41L7.14 13H19a1 1 0 0 0 0-2z"/>
+    </svg>
+  </a>
+
+  <!-- Przycisk nawigacyjny po prawej stronie -->
+  <div class="scroll-buttons">
+    <div class="scroll-button-container">
+        <button class="scroll-button" data-target="#podtytul1"></button>
+        <span class="scroll-title">Podtytuł 1</span>
+    </div>
+    <div class="scroll-button-container">
+        <button class="scroll-button" data-target="#podtytul2"></button>
+        <span class="scroll-title">Podtytuł 2</span>
+    </div>
+    <div class="scroll-button-container">
+        <button class="scroll-button" data-target="#podtytul3"></button>
+        <span class="scroll-title">Podtytuł 3</span>
+    </div>
+    <div class="scroll-button-container">
+        <button class="scroll-button" data-target="#podtytul4"></button>
+        <span class="scroll-title">Podtytuł 4</span>
+    </div>
+  </div>
+
+  <!-- Treść artykułu -->
+  <section class="article-detail">
+    <h1>Tytuł Artykułu</h1>
+    <div class="article-meta">
+      <p>Autorzy: <a href="#" class="author">Eerter</a>, <a href="#" class="author">Materoxxs</a></p>
+      <p>Data publikacji: 2024-09-19</p>
+    </div>
+    <div class="article-content">
+      <h2>Podtytuł Artykułu</h2>
+      <p>Treść artykułu...</p>
+      
+      <h3 id="podtytul1">Podtytuł 1</h3>
+      <p>Treść podtytułu 1...</p>
+      
+      <h3 id="podtytul2">Podtytuł 2</h3>
+      <p>Treść podtytułu 2...</p>
+
+      <h4>Podpodtytuł</h4>
+      <p>Treść podpodtytułu...</p>
+      
+      <h3 id="podtytul3">Podtytuł 3</h3>
+      <p>Treść podtytułu 3...</p>
+
+      <h3 id="podtytul4">Podtytuł 4</h3>
+      <p>Treść podtytułu 4...</p>
+    </div>
+
+    <div class="comments-section">
+      <h2>Komentarze</h2>
+      <div class="comment">
+        <div class="comment-header">
+          <p class="comment-author"><a href="#" class="author-link">Jan Kowalski</a></p>
+          <div class="like-button">
+            <svg class="heart-icon" viewBox="0 0 24 24" data-like="0">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+            <span class="like-count">10</span>
+          </div>
+        </div>
+        <p class="comment-text">Świetny artykuł!</p>
+      </div>
+      <div class="comment">
+        <div class="comment-header">
+          <p class="comment-author"><a href="#" class="author-link">Anna Nowak</a></p>
+          <div class="like-button">
+            <svg class="heart-icon" viewBox="0 0 24 24" data-like="0">
+              <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+            </svg>
+            <span class="like-count">5</span>
+          </div>
+        </div>
+        <p class="comment-text">Bardzo interesujące informacje.</p>
+      </div>
+
+      <div class="comment-form">
+        <h3>Dodaj Komentarz</h3>
+        <form action="#">
+          <label for="name">Imię:</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="comment">Komentarz:</label>
+          <textarea id="comment" name="comment" rows="4" required></textarea>
+          
+          <button type="submit" class="btn">Wyślij</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stopka -->
+  <footer>
+    <p>Copyright &copy; 2024 Projekt Pedia</p>
+    <div class="social-icons">
+      <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+      <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+      <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+    </div>
+  </footer>
+
+  <script src="article-app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+:root {
+  --primary-color: #ffb700;
+  --secondary-color: #191919; 
+  --first-color: #000000;
+  --text-color: #fff;
+  --third-color: #555;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.6;
+  background-color: var(--first-color);
+  color: var(--text-color);
+}
+
+.hero {
+  background-image: url('galaxy.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.articles {
+  padding: 4rem 2rem;
+  background-color: var(--first-color);
+}
+
+.articles h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.article-desc {
+  color: var(--third-color);
+}
+
+.articles-list {
+  list-style: none;
+  padding: 0;
+}
+
+.articles-list li {
+  position: relative;
+  background-color: var(--secondary-color);
+  padding: 2rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.like-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.heart-path {
+  fill: var(--third-color);
+}
+
+.like-button.liked .heart-path {
+  fill: var(--primary-color);
+}
+
+.like-count {
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+
+.comments-counter {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 0.9rem;
+  color: var(--third-color);
+}
+
+.tags {
+  margin-bottom: 1rem;
+}
+
+.tag {
+  color: var(--primary-color);
+  text-decoration: none;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.tag:hover {
+  text-decoration: underline;
+}
+
+.authors {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: var(--third-color); /* Kolor "Autorzy:" */
+}
+
+.authors .author {
+  color: var(--third-color);
+  text-decoration: none; /* Bez podkreślenia */
+}
+
+.authors .author:hover {
+  color: var(--primary-color);
+  text-decoration: underline; /* Podkreślenie przy najechaniu */
+}
+
+.all-articles {
+  display: block;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+footer {
+  background-color: var(--first-color);
+  color: var(--third-color);
+  padding: 2rem;
+  text-align: center;
+}
+
+.social-icons img {
+  width: 24px;
+  margin: 0 10px;
+}
+
+.heart-icon {
+  display: inline-block;
+  width: 24px; /* Możesz dostosować rozmiar */
+  height: 24px; /* Możesz dostosować rozmiar */
+  margin-right: 0.5rem; /* Dystans od liczby */
+}
+
+.articles-list li {
+  position: relative;
+  background-color: var(--secondary-color);
+  padding: 2rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Upewnij się, że kontener nie wypycha zawartości */
+}
+
+.article-link {
+  color: var(--text-color); /* Ustaw kolor tekstu */
+  text-decoration: 0;
+}
+
+.article-link:hover {
+  color: var(--primary-color); /* Ustaw kolor przy najechaniu */
+  text-decoration: underline; /* Podkreślenie przy najechaniu */
+}
+
